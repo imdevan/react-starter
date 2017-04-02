@@ -1,0 +1,13 @@
+$default-avatar-background: none;
+
+.avatar {
+  background-position: center;
+  background-size: cover;
+  display: block;
+  background-color: $default-avatar-background;
+  opacity: 0;
+
+  &.loaded {
+    opacity: 1;
+  }
+}

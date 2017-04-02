@@ -1,0 +1,39 @@
+$primary-link-color: $blue;
+$alt-link-color: $blue;
+$light-link-color: $white;
+
+@mixin linkColor($color) {
+  color: $color;
+
+  &:hover, &:focus, &:visited {
+    color: $color;
+  }
+}
+
+.link {
+  @include linkColor($primary-link-color);
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &--light {
+    @include linkColor($light-link-color)
+  }
+
+  &--no-underline {
+    text-decoration: none !important;
+  }
+
+  &--orange-active {
+    &.active {
+      color: $orange;
+    }
+  }
+
+  &--orange-hover {
+    &:hover {
+      color: $orange;
+    }
+  }
+}

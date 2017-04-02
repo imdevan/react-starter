@@ -1,0 +1,21 @@
+
+html {
+  -webkit-user-select: none;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open sans", sans-serif;
+  font-style: normal;
+  height: 100%;
+}
+
+@import "colors";
+@import 'bootstrap-custom';
+@import './components/link';
+@import './common/background';
+@import './common/shadow';
+@import './components/common/avatar';
+@import './components/common/horizontal-line';
